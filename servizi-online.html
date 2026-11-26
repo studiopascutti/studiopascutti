@@ -1,162 +1,193 @@
 <!doctype html>
 <html lang="it">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Servizi online – Studio Pascutti</title>
-<meta name="description" content="Area clienti Genya OneClick, prenotazione appuntamenti e servizi online dello Studio Pascutti di Udine.">
-<meta name="robots" content="noindex, nofollow">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/stile.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servizi per i clienti – Bruno Pascutti</title>
+  <meta name="description" content="Genya OneClick, assistenza e informazioni sui servizi online dello Studio Pascutti, dottore commercialista e revisore legale a Udine.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#142c49">
+  <link rel="icon" href="assets/brand/monogramma-pascutti.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/stile.css">
+  <link rel="stylesheet" href="assets/servizi.css">
+  <script src="assets/site.js" defer></script>
 </head>
-<body>
-<div id="pagina" style="font-family: Inter, system-ui, sans-serif; color: #1B2433; background: #FFFFFF; line-height: 1.6; font-size: 18px">
+<body class="services-page">
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Bruno Pascutti, pagina iniziale">
+        <img class="brand-logo" src="assets/brand/logo-pascutti-web.svg" width="310" height="70" alt="Bruno Pascutti — Dottore Commercialista, Revisore Legale">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span>Menu</span><span class="menu-icon" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="primary-nav" aria-label="Menu principale">
+        <a href="index.html#studio">Lo studio</a>
+        <a href="index.html#servizi">Attività</a>
+        <a href="index.html#contatti">Contatti</a>
+        <a class="nav-cta" href="servizi-online.html" aria-current="page">Area clienti</a>
+      </nav>
+    </div>
+  </header>
 
-<header style="background: #FFFFFF; border-bottom: 1px solid #E1E5EB">
-<div style="max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="./" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #1B2433">
-<span style="width: 48px; height: 48px; border-radius: 4px; background: #1F3A5F; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 22px">BP</span>
-<span style="display: flex; flex-direction: column; line-height: 1.25">
-<span style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 22px">Studio Pascutti</span>
-<span style="font-size: 14px; color: #4A5672">Dottore Commercialista · Revisore Legale</span>
-</span>
-</a>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px">
-<a href="./" style="color: #1B2433; font-weight: 500; text-decoration: none; display: inline-flex; align-items: center; min-height: 48px; padding: 0 12px">Home</a>
-<button type="button" id="btn-testo" aria-pressed="false" style="min-height: 48px; padding: 0 20px; border-radius: 4px; border: 2px solid #1F3A5F; background: #FFFFFF; color: #1F3A5F; font: inherit; font-weight: 600; font-size: 17px; cursor: pointer">A+  Testo più grande</button>
-</div>
-</div>
-</header>
+  <main id="contenuto">
+    <section class="services-masthead" aria-labelledby="services-title">
+      <div class="container services-masthead-inner">
+        <div>
+          <p class="eyebrow">Area clienti</p>
+          <h1 id="services-title">Servizi per i clienti</h1>
+          <p class="services-lead">Accesso ai servizi digitali, documenti e informazioni per i rapporti con lo studio.</p>
+        </div>
+        <div class="services-reading">
+          <p>Opzioni di lettura</p>
+          <button class="services-text-toggle" type="button" data-text-toggle aria-pressed="false">A+ Testo più grande</button>
+        </div>
+      </div>
+    </section>
 
-<section style="background: #1F3A5F; color: #FFFFFF">
-<div style="max-width: 1200px; margin: 0 auto; padding: 64px 32px; display: flex; flex-direction: column; gap: 14px">
-<h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 2.6em; line-height: 1.1">Servizi online</h1>
-<p style="margin: 0; font-size: 1.1em; max-width: 720px; color: #DCE3EE">Tutto quello che serve per lavorare con lo studio senza spostarsi da casa o dall'ufficio.</p>
-</div>
-</section>
+    <section class="services-portal-section" id="oneclick" aria-labelledby="oneclick-title">
+      <div class="container">
+        <div class="services-portal">
+          <div class="services-portal-copy">
+            <p class="eyebrow">Genya OneClick</p>
+            <h2 id="oneclick-title">Area riservata OneClick</h2>
+            <p>Il portale per consultare i documenti e gli F24 inviati dallo studio, scambiare comunicazioni e gestire le fatture elettroniche.</p>
+            <div class="services-portal-status">
+              <span class="services-status">Accesso in preparazione</span>
+              <p>Il collegamento diretto al portale sarà disponibile in questa pagina. Per informazioni sull’accesso ai servizi già attivi, contattare lo studio.</p>
+            </div>
+            <a class="button button-primary" href="tel:+390432294880">Contatta lo studio</a>
+          </div>
+          <aside class="services-portal-help" aria-labelledby="access-help-title">
+            <h3 id="access-help-title">Supporto all’accesso</h3>
+            <p>Per il primo accesso, il recupero della password o l’utilizzo del portale, lo studio fornisce assistenza telefonica.</p>
+            <a class="services-help-phone" href="tel:+390432294880">0432 294880</a>
+            <p class="services-help-hours">Lun–gio 8.30–12.30 / 14.30–17.30<br> Ven 8.30–12.30</p>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-<section style="background: #F5F6F8">
-<div style="max-width: 1200px; margin: 0 auto; padding: 56px 32px; display: flex; flex-direction: column; gap: 40px">
+    <section class="services-capabilities" id="guide" aria-labelledby="capabilities-title">
+      <div class="container services-split">
+        <div class="services-section-copy">
+          <p class="eyebrow">Servizi digitali</p>
+          <h2 class="section-heading" id="capabilities-title">I servizi di OneClick</h2>
+          <p class="section-intro">Documenti, comunicazioni e adempimenti nell’area riservata.</p>
+          <p class="services-small-note">Le guide all’utilizzo sono in preparazione. Lo studio è disponibile per informazioni sui servizi attivi.</p>
+        </div>
+        <div class="services-feature-list">
+          <article class="services-feature">
+            <h3>Documenti e F24</h3>
+            <p>Dichiarazioni, ricevute, bilanci e deleghe F24 da pagare. Lo studio riceve conferma dell’avvenuta lettura.</p>
+          </article>
+          <article class="services-feature">
+            <h3>Messaggi con lo studio</h3>
+            <p>Comunicazioni direttamente dall’area clienti, tracciate insieme ai documenti.</p>
+          </article>
+          <article class="services-feature">
+            <h3>Fatture elettroniche</h3>
+            <p>Emissione, ricezione e consegna allo studio delle fatture elettroniche con Fattura SMART.</p>
+          </article>
+          <article class="services-feature">
+            <h3>Corrispettivi</h3>
+            <p>Per chi utilizza il registratore telematico, i corrispettivi arrivano allo studio in automatico.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<div style="background: #FFFFFF; border: 1px solid #D5DBE4; border-top: 4px solid #1F3A5F; border-radius: 6px; padding: 40px; display: flex; flex-wrap: wrap; gap: 40px">
-<div style="flex: 999 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
-<p style="margin: 0; font-size: 0.85em; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #1F3A5F">Area clienti</p>
-<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 2em; line-height: 1.15">Genya OneClick</h2>
-<p style="margin: 0">Il portale dello studio per i clienti: documenti e F24 inviati dallo studio, comunicazioni con lo studio e gestione delle fatture elettroniche.</p>
-<a href="#" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; min-height: 64px; padding: 0 36px; border-radius: 4px; background: #1F3A5F; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 1.1em">Accesso all'area clienti <span aria-hidden="true">→</span></a>
-<p style="margin: 0; font-size: 0.9em; color: #4A5672">Si apre il portale OneClick di Wolters Kluwer in una nuova scheda.</p>
-</div>
-<div style="flex: 1 1 340px; min-width: 0; background: #F5F6F8; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
-<h3 style="margin: 0; font-size: 1.2em">Come entrare in 3 passi</h3>
-<ol style="margin: 0; padding-left: 1.4em; display: flex; flex-direction: column; gap: 12px">
-<li>Premere il pulsante <strong>Accesso all'area clienti</strong>.</li>
-<li>Inserire l'e-mail e la password ricevute dallo studio.</li>
-<li>Se richiesto, inserire il codice di conferma ricevuto via SMS o e-mail.</li>
-</ol>
-<p style="margin: 0; padding-top: 12px; border-top: 1px solid #D5DBE4">Primo accesso, password dimenticata o problemi di accesso? Lo studio è a disposizione al <strong>0432 294880</strong> per guidare passo per passo.</p>
-</div>
-</div>
+    <section class="services-resources" aria-labelledby="resources-title">
+      <div class="container services-split">
+        <div class="services-section-copy">
+          <p class="eyebrow">Informazioni utili</p>
+          <h2 class="section-heading" id="resources-title">Documenti e appuntamenti</h2>
+          <p class="section-intro">Informazioni e strumenti in preparazione per i clienti dello studio.</p>
+        </div>
+        <div class="services-accordions">
+          <details class="services-detail" id="appuntamenti">
+            <summary><span class="services-detail-heading"><span>Prenotazione appuntamenti</span><span class="services-detail-status">In preparazione</span></span><span class="services-detail-mark" aria-hidden="true"></span></summary>
+            <div class="services-detail-content">
+              <p>Il servizio permetterà di scegliere un giorno e un orario disponibili, in studio o in videochiamata.</p>
+              <p>Per fissare un appuntamento, contattare lo studio al <a href="tel:+390432294880">0432 294880</a>. Si riceve su appuntamento.</p>
+            </div>
+          </details>
+          <details class="services-detail" id="documenti">
+            <summary><span class="services-detail-heading"><span>Cosa portare allo studio</span><span class="services-detail-status">In preparazione</span></span><span class="services-detail-mark" aria-hidden="true"></span></summary>
+            <div class="services-detail-content">
+              <p>Qui saranno raccolti gli elenchi dei documenti per 730, Redditi, bilancio e apertura della partita IVA.</p>
+              <p>In attesa della pubblicazione, è possibile richiedere allo studio l’elenco dei documenti necessari alla propria pratica.</p>
+              <a class="services-text-link" href="index.html#contatti">Contatti dello studio</a>
+            </div>
+          </details>
+          <details class="services-detail" id="circolari">
+            <summary><span class="services-detail-heading"><span>Scadenze e circolari</span><span class="services-detail-status">In preparazione</span></span><span class="services-detail-mark" aria-hidden="true"></span></summary>
+            <div class="services-detail-content">
+              <p>Questa sezione raccoglierà le scadenze del mese e le circolari dello studio.</p>
+              <p>Per chiarimenti su una comunicazione ricevuta o su un adempimento, contattare lo studio.</p>
+              <a class="services-text-link" href="index.html#contatti">Contatti dello studio</a>
+            </div>
+          </details>
+          <details class="services-detail" id="modulistica">
+            <summary><span class="services-detail-heading"><span>Modulistica</span><span class="services-detail-status">In preparazione</span></span><span class="services-detail-mark" aria-hidden="true"></span></summary>
+            <div class="services-detail-content">
+              <p>Questa sezione raccoglierà deleghe, informativa privacy e dichiarazioni per l’antiriciclaggio da scaricare.</p>
+              <p>Per ricevere il modello necessario alla propria pratica, contattare lo studio.</p>
+              <a class="services-text-link" href="index.html#contatti">Contatti dello studio</a>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
 
-<div style="display: flex; flex-direction: column; gap: 6px">
-<p style="margin: 0; font-size: 0.85em; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #1F3A5F">Dentro OneClick</p>
-<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.7em; line-height: 1.2">I servizi dell'area clienti</h2>
-<p style="margin: 0; color: #4A5672">Ogni servizio ha una breve guida con i passaggi da seguire.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px">
-<div style="background: #FFFFFF; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; min-height: 160px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"></path><path d="M14 3v5h5"></path><path d="M10 13h6M10 17h4"></path></svg>
-<span style="font-weight: 600; font-size: 1.15em">Documenti e F24 dello studio</span>
-<span style="color: #4A5672">Dichiarazioni, ricevute, bilanci e deleghe F24 da pagare. Lo studio riceve conferma dell'avvenuta lettura.</span>
-<a href="#" style="margin-top: auto; align-self: flex-start; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center">Guida <span aria-hidden="true">&nbsp;→</span></a>
-</div>
-<div style="background: #FFFFFF; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; min-height: 160px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg>
-<span style="font-weight: 600; font-size: 1.15em">Messaggi con lo studio</span>
-<span style="color: #4A5672">Comunicazioni con lo studio direttamente dall'area clienti, tracciate insieme ai documenti.</span>
-<a href="#" style="margin-top: auto; align-self: flex-start; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center">Guida <span aria-hidden="true">&nbsp;→</span></a>
-</div>
-<div style="background: #FFFFFF; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; min-height: 160px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l3 3v15H6z"></path><path d="M9 9h6M9 13h6M9 17h3"></path></svg>
-<span style="font-weight: 600; font-size: 1.15em">Fatture elettroniche</span>
-<span style="color: #4A5672">Emissione, ricezione e consegna allo studio delle fatture elettroniche con Fattura SMART.</span>
-<a href="#" style="margin-top: auto; align-self: flex-start; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center">Guida <span aria-hidden="true">&nbsp;→</span></a>
-</div>
-<div style="background: #FFFFFF; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; min-height: 160px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 7h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2"></path></svg>
-<span style="font-weight: 600; font-size: 1.15em">Corrispettivi</span>
-<span style="color: #4A5672">Per chi utilizza il registratore telematico, i corrispettivi arrivano allo studio in automatico.</span>
-<a href="#" style="margin-top: auto; align-self: flex-start; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center">Guida <span aria-hidden="true">&nbsp;→</span></a>
-</div>
-</div>
+    <section class="services-institutions" aria-labelledby="institutions-title">
+      <div class="container">
+        <div class="services-institutions-heading">
+          <div>
+            <p class="eyebrow">Collegamenti utili</p>
+            <h2 class="section-heading" id="institutions-title">Collegamenti istituzionali</h2>
+          </div>
+          <p>I collegamenti aprono i siti ufficiali<br> in una nuova scheda.</p>
+        </div>
+        <div class="services-institution-links">
+          <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer"><span>Agenzia delle Entrate</span><span class="services-institution-description">Servizi fiscali e informazioni</span></a>
+          <a href="https://www.agenziaentrateriscossione.gov.it" target="_blank" rel="noopener noreferrer"><span>Agenzia Entrate-Riscossione</span><span class="services-institution-description">Riscossione e pagamenti</span></a>
+          <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer"><span>INPS</span><span class="services-institution-description">Previdenza e prestazioni</span></a>
+          <a href="https://www.registroimprese.it" target="_blank" rel="noopener noreferrer"><span>Registro Imprese</span><span class="services-institution-description">Informazioni sulle imprese</span></a>
+        </div>
+      </div>
+    </section>
 
-<div style="display: flex; flex-direction: column; gap: 6px">
-<p style="margin: 0; font-size: 0.85em; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #1F3A5F">Dallo studio</p>
-<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.7em; line-height: 1.2">Altri servizi</h2>
-<p style="margin: 0; color: #4A5672">Servizi disponibili direttamente su questo sito, senza necessità di accesso.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px">
-<a href="#" style="background: #FFFFFF; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #1B2433; min-height: 160px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg>
-<span style="font-weight: 600; font-size: 1.15em">Prenotazione appuntamenti</span>
-<span style="color: #4A5672">Scelta del giorno e dell'ora disponibili, in studio o in videochiamata.</span>
-</a>
-<a href="#" style="background: #FFFFFF; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #1B2433; min-height: 160px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"></path><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"></path></svg>
-<span style="font-weight: 600; font-size: 1.15em">Cosa portare</span>
-<span style="color: #4A5672">Gli elenchi dei documenti per 730, Redditi, bilancio e apertura della partita IVA.</span>
-</a>
-<a href="#" style="background: #FFFFFF; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #1B2433; min-height: 160px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
-<span style="font-weight: 600; font-size: 1.15em">Scadenze e circolari</span>
-<span style="color: #4A5672">Le scadenze del mese e le circolari dello studio, spiegate in modo semplice.</span>
-</a>
-<a href="#" style="background: #FFFFFF; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #1B2433; min-height: 160px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"></path><path d="M4 9h16M9 9v11"></path></svg>
-<span style="font-weight: 600; font-size: 1.15em">Modulistica</span>
-<span style="color: #4A5672">Deleghe, informativa privacy e dichiarazioni per l'antiriciclaggio da scaricare.</span>
-</a>
-</div>
+    <section class="services-contact" aria-labelledby="contact-help-title">
+      <div class="container services-contact-inner">
+        <div>
+          <p class="eyebrow">Contatti</p>
+          <h2 class="section-heading" id="contact-help-title">Assistenza dello studio</h2>
+          <p>Per informazioni sui servizi e per fissare un appuntamento.</p>
+        </div>
+        <a class="button button-primary" href="tel:+390432294880">Chiama 0432 294880</a>
+      </div>
+    </section>
+  </main>
 
-
-</div>
-</section>
-
-<section style="background: #FFFFFF">
-<div style="max-width: 1200px; margin: 0 auto; padding: 64px 32px; display: flex; flex-direction: column; gap: 24px">
-<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 2em; line-height: 1.15">Collegamenti utili</h2>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
-<a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; min-height: 64px; padding: 0 22px; border: 1px solid #D5DBE4; border-radius: 4px; text-decoration: none; color: #1B2433; font-weight: 600">Agenzia delle Entrate <span aria-hidden="true" style="color: #1F3A5F">↗</span></a>
-<a href="https://www.agenziaentrateriscossione.gov.it" target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; min-height: 64px; padding: 0 22px; border: 1px solid #D5DBE4; border-radius: 4px; text-decoration: none; color: #1B2433; font-weight: 600">Agenzia Entrate-Riscossione <span aria-hidden="true" style="color: #1F3A5F">↗</span></a>
-<a href="https://www.inps.it" target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; min-height: 64px; padding: 0 22px; border: 1px solid #D5DBE4; border-radius: 4px; text-decoration: none; color: #1B2433; font-weight: 600">INPS <span aria-hidden="true" style="color: #1F3A5F">↗</span></a>
-<a href="https://www.registroimprese.it" target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; min-height: 64px; padding: 0 22px; border: 1px solid #D5DBE4; border-radius: 4px; text-decoration: none; color: #1B2433; font-weight: 600">Registro Imprese <span aria-hidden="true" style="color: #1F3A5F">↗</span></a>
-</div>
-</div>
-</section>
-
-<section style="background: #EEF1F5; border-top: 1px solid #E1E5EB">
-<div style="max-width: 1200px; margin: 0 auto; padding: 48px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 6px">
-<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.6em">Serve aiuto?</h2>
-<p style="margin: 0">Lo studio è raggiungibile al 0432 294880 o all'indirizzo [E-MAIL].</p>
-</div>
-<a href="./" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; border-radius: 4px; background: #1B2433; color: #FFFFFF; text-decoration: none; font-weight: 600">Contatti dello studio</a>
-</div>
-</section>
-
-<footer style="background: #1B2433; color: #C9D2EA; font-size: 15px">
-<div style="max-width: 1200px; margin: 0 auto; padding: 40px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px">
-<p style="margin: 0">Studio Bruno Pascutti Dottore Commercialista · Piazza della Repubblica 3, 33100 Udine · P.IVA 02730080302</p>
-<p style="margin: 0; display: flex; gap: 20px"><a href="#" style="color: #FFFFFF">Privacy</a><a href="#" style="color: #FFFFFF">Cookie</a><a href="#" style="color: #FFFFFF">Accessibilità</a></p>
-</div>
-</footer>
-
-</div>
-<script>
-(function(){var b=document.getElementById('btn-testo'),p=document.getElementById('pagina'),k='sp-testo-grande';
-function set(on){p.style.fontSize=on?'22px':'18px';b.setAttribute('aria-pressed',on?'true':'false');b.style.background=on?'#1F3A5F':'#FFFFFF';b.style.color=on?'#FFFFFF':'#1F3A5F';try{localStorage.setItem(k,on?'1':'0')}catch(e){}}
-var on=false;try{on=localStorage.getItem(k)==='1'}catch(e){}set(on);
-b.addEventListener('click',function(){on=!on;set(on)});})();
-</script>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Bruno Pascutti, pagina iniziale">
+            <img class="brand-logo" src="assets/brand/logo-pascutti-web.svg" width="310" height="70" alt="Bruno Pascutti — Dottore Commercialista, Revisore Legale" loading="lazy">
+          </a>
+        </div>
+        <div class="footer-meta">
+          <p>Bruno Pascutti · P. IVA 02730080302</p>
+          <p>Piazza della Repubblica 3 · 33100 Udine</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a href="index.html#contatti">Contatti dello studio</a>
+        <span class="footer-preparation">Informative in preparazione</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
